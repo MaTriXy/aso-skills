@@ -86,6 +86,16 @@ Which skills use which Appeeky tools:
 | `press-and-pr` | `get_app`, `search_apps` |
 | `competitor-tracking` | `get_app`, `get_app_keywords`, `get_app_reviews`, `get_market_movers`, `get_market_activity` |
 | `crash-analytics` | `get_app`, `get_app_reviews` |
+| `paywall-optimization` | `get_app_intelligence`, `get_app_reviews` (signal on paywall complaints) |
+| `app-preview-video` | `get_app` (existing video URL), competitor screenshots/videos |
+| `attribution-setup` | — (configuration skill, not data-driven) |
+| `custom-product-pages` | `get_app`, `get_app_intelligence` (per-CPP analysis post-launch in ASC) |
+| `app-rejection-recovery` | — (Apple/Google reviewer-facing, no Appeeky data) |
+| `referral-program` | `get_app_intelligence` (organic vs referred install lift) |
+| `creator-ugc-marketing` | `get_app`, `get_app_reviews` (creator-driven sentiment), `search_apps` |
+| `web-to-app-funnel` | `get_app_intelligence` (web-driven install lift) |
+| `category-positioning` | `get_category_top`, `get_downloads_to_top`, `get_app`, `search_apps` |
+| `aso-router` | — (router; loads other skills) |
 
 ## Other Useful Tools
 

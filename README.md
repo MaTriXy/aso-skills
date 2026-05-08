@@ -55,6 +55,12 @@ Then ask your agent:
 "My app has a crash affecting 2% of sessions — help me triage it"
 ```
 
+**Don't want to remember 30 skill names?** Just use the router:
+
+```
+/aso-skill  →  routes your request to the right specialist skill automatically
+```
+
 Or invoke directly: `/aso-audit`, `/keyword-research`, `/metadata-optimization`, `/market-movers`, `/market-pulse`, `/asc-metrics`, `/in-app-events`, `/seasonal-aso`, `/android-aso`, `/apple-search-ads`, `/competitor-tracking`
 
 ## Skills
@@ -75,7 +81,9 @@ Or invoke directly: `/aso-audit`, `/keyword-research`, `/metadata-optimization`,
 | Skill | What it does |
 |-------|-------------|
 | [`screenshot-optimization`](skills/screenshot-optimization) | 10-slot screenshot strategy with design briefs, text overlay copy, and competitor audit |
+| [`app-preview-video`](skills/app-preview-video) | Up to 3 App Preview videos per locale — script template, beat-by-beat structure, Apple/Play specs, rejection avoidance |
 | [`app-icon-optimization`](skills/app-icon-optimization) | Icon design principles, A/B testing via PPO/Play Experiments, category differentiation, and icon briefs |
+| [`custom-product-pages`](skills/custom-product-pages) | Apple CPPs — variant strategy by audience/channel, ASA + CPP unlock, measurement floor, common mistakes |
 | [`review-management`](skills/review-management) | Sentiment analysis, response templates (HEAR framework), rating improvement tactics |
 | [`localization`](skills/localization) | Market prioritization matrix, per-country keyword research, cultural adaptation checklist |
 
@@ -86,6 +94,9 @@ Or invoke directly: `/aso-audit`, `/keyword-research`, `/metadata-optimization`,
 | [`app-launch`](skills/app-launch) | 8-week launch timeline with daily checklists, channel strategy, and press outreach templates |
 | [`ua-campaign`](skills/ua-campaign) | Apple Search Ads, Meta, Google UAC — campaign structure, bidding, creative specs, budget allocation |
 | [`apple-search-ads`](skills/apple-search-ads) | Deep-dive ASA — campaign structure, match types, CPP routing, bid strategy, weekly optimization checklist |
+| [`creator-ugc-marketing`](skills/creator-ugc-marketing) | TikTok / IG / YouTube creator program — briefs, sourcing, hook angles, Spark Ads / Partnership Ads, measurement |
+| [`referral-program`](skills/referral-program) | In-app referral / invite mechanics — reward sizing, K-factor math, fraud prevention, deep link flow |
+| [`web-to-app-funnel`](skills/web-to-app-funnel) | Web → app install funnels (incl. quiz + Stripe + deferred deep link) to bypass App Store fees on subs |
 | [`app-store-featured`](skills/app-store-featured) | Featuring readiness score, Apple tech checklist, pitch template, In-App Events calendar |
 | [`in-app-events`](skills/in-app-events) | Plan and write App Store In-App Events — copy, image brief, keyword strategy, submission timeline |
 | [`app-clips`](skills/app-clips) | App Clip use cases, card design, URL scheme setup, SKOverlay handoff, and measurement |
@@ -95,7 +106,8 @@ Or invoke directly: `/aso-audit`, `/keyword-research`, `/metadata-optimization`,
 
 | Skill | What it does |
 |-------|-------------|
-| [`monetization-strategy`](skills/monetization-strategy) | Pricing tiers, paywall timing/design, trial optimization, category benchmarks |
+| [`monetization-strategy`](skills/monetization-strategy) | Pricing tiers, paywall timing, trial structure, category benchmarks |
+| [`paywall-optimization`](skills/paywall-optimization) | Paywall conversion funnel diagnostic, 7-element audit, A/B test playbook (Superwall, RevenueCat, Adapty) |
 | [`subscription-lifecycle`](skills/subscription-lifecycle) | Trial nurture sequences, voluntary/involuntary churn reduction, dunning, and win-back campaigns |
 | [`retention-optimization`](skills/retention-optimization) | Activation → habit → engagement framework, push notification sequences, churn prevention |
 | [`onboarding-optimization`](skills/onboarding-optimization) | First-run flow audit, activation event definition, permission prompt timing, sign-up friction reduction |
@@ -106,6 +118,7 @@ Or invoke directly: `/aso-audit`, `/keyword-research`, `/metadata-optimization`,
 | Skill | What it does |
 |-------|-------------|
 | [`app-analytics`](skills/app-analytics) | Event tracking plan, dashboard setup, KPI framework with category benchmarks |
+| [`attribution-setup`](skills/attribution-setup) | SKAdNetwork 4 / AdAttributionKit / MMP setup — conversion-value schema design, deep link debug playbook |
 | [`ab-test-store-listing`](skills/ab-test-store-listing) | Hypothesis → variant design → sample size → interpretation for App Store A/B tests |
 | [`asc-metrics`](skills/asc-metrics) | Analyze your exact App Store Connect data (downloads, revenue, subscriptions, countries) via Appeeky Connect |
 | [`crash-analytics`](skills/crash-analytics) | Crashlytics setup, crash triage framework (P0–P3), symbolication, phased release strategy, rating recovery |
@@ -118,10 +131,18 @@ Or invoke directly: `/aso-audit`, `/keyword-research`, `/metadata-optimization`,
 | [`market-pulse`](skills/market-pulse) | Full market briefing: chart movements + trending keywords + featured apps + new launches in one view |
 | [`competitor-tracking`](skills/competitor-tracking) | Weekly competitor surveillance — metadata changes, keyword shifts, rating trends, chart movement deltas |
 
+### Strategy & Recovery
+
+| Skill | What it does |
+|-------|-------------|
+| [`category-positioning`](skills/category-positioning) | Pick / switch primary + secondary App Store / Play categories — competitive density, featuring odds, switch-cost analysis |
+| [`app-rejection-recovery`](skills/app-rejection-recovery) | Diagnose Apple / Google rejections by guideline, draft Resolution Center responses, decide fix vs appeal |
+
 ### Foundation
 
 | Skill | What it does |
 |-------|-------------|
+| [`aso-router`](skills/aso-router) | **Single entry point** — reads any natural-language ASO request and routes to the right specialist skill. Use when you don't want to remember every skill name |
 | [`app-marketing-context`](skills/app-marketing-context) | Creates a context doc (app, audience, competitors, goals) that all other skills reference |
 
 ## How It Works
